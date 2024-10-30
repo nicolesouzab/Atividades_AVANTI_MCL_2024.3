@@ -1,0 +1,30 @@
+1. Explique, com suas palavras, o que é machine learning?
+R: Machine Learning (Aprendizado de máquina) é um subconjunto da IA que desenvolve algoritmos que podem aprender com dados. Em vez de seguir instruções fixas, um modelo de Machine Learning analisa grandes quantidades de dados, identifica padrões e faz previsões ou decisões com base nesses padrões. Ele é dividido em três áreas, sendo elas:
+- Aprendizado supervisionado - Classificação;
+- Aprendizado não supervisionado - Agrupamento de dados;
+- Aprendizado por reforço - baseado em tentativa e erro.
+No curso, vamos nos aprofundar no Aprendizado Supervisionado, necessitando de informações prévias vindo de banco de dados específicos para cada classificação que serão usadas para criar modelos e assim definir corretamente as informações pedidas.
+ 
+2. Explique o conceito de conjunto de treinamento, conjunto de validação e
+conjunto de teste em machine learning.
+- Conjunto de treinamento: É o maior conjunto de dados e é utilizado para treinar o modelo. Aqui, o modelo "aprende" os padrões e relações nos dados. Durante o treinamento, o algoritmo ajusta seus parâmetros para se adaptar a esses padrões.
+- Conjunto de validação: Após o treinamento, o modelo é avaliado com o conjunto de validação para verificar seu desempenho em dados que ele não viu durante o treinamento. Isso ajuda a ajustar hiperparâmetros (como a taxa de aprendizado, profundidade da árvore, etc.) e prevenir o problema de overfitting, que ocorre quando o modelo se ajusta tão bem ao conjunto de treinamento que tem dificuldade em generalizar para novos dados.
+- Conjunto de teste: Após o modelo ser treinado e ajustado, ele é avaliado em um novo conjunto de dados, o conjunto de teste. Esses dados nunca foram usados durante o treinamento ou validação. O objetivo é medir a capacidade do modelo de generalizar para dados completamente novos, garantindo que as previsões sejam precisas em situações do mundo real.
+
+3. Explique como você lidaria com dados ausentes em um conjunto de dados
+de treinamento.
+A escolha do método depende do contexto e das características dos dados em questão. Alguns aspectos importantes precisam ser levados em consideração ao tratar os dados ausentes, como entender a natureza desses dados e avaliar a quantidade dos valores faltantes. Os métodos mais usados para tratar esse tipo de dados são a Exclusão e a Imputação de novos dados, estimando e preenchendo os valores faltantes com base nas informações disponíveis.
+
+4. O que é uma matriz de confusão e como ela é usada para avaliar o
+desempenho de um modelo preditivo?
+A matriz de confusão é uma tabela que irá conter diversos tipos de erros. Ela é interessante para se ter uma visão mais global do modelo. Em um contexto de predição de fraudes, por exemplo, deve-se prestar atenção à quantidade de fraudes positivas que foram classificadas como negativas e vice-versa, no qual essa métrica se encaixa de maneira eficaz.
+Tipos de erros:
+- Verdadeiro positivo (true positive — TP): Por exemplo, quando não há fraude e o modelo classifica como não há fraude;
+- Falso positivo (false positive — FP): Por exemplo, quando não há fraude e o modelo classifica como há fraude;
+- Falso negativo (true negative — TN): Por exemplo, quando há fraude e o modelo classifica como não há fraude;
+- Verdadeiro negativo (false negative — FN): Por exemplo, quando há fraude e o modelo classifica como há fraude.
+
+5. Em quais áreas (tais como construção civil, agricultura, saúde, manufatura,
+entre outras) você acha mais interessante aplicar algoritmos de machine
+learning?
+Acho importante e necessário aplicar os algoritmos nas áreas de saúde, podendo agrupar e classificar grandes números de dados e estuda-los para ajudar a população em geral.
